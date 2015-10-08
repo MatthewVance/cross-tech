@@ -1,5 +1,5 @@
 Title: About
-Date: 2015-10-05 8:00
+Date: 2015-10-07 22:30
 Slug: about
 Summary: I'm a Jesus follower, husband, father, information security guru, and an all around geek.
 

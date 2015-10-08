@@ -1,6 +1,6 @@
 Title: Obligatory First Post
-Date: 2015-10-06 8:00
-Modified: 2015-10-05 8:00
+Date: 2015-10-07 22:30
+Modified: 2015-10-07 22:30
 Category: miscellaneous
 Tags: life
 Slug: fist-post

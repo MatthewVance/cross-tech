@@ -1,5 +1,5 @@
 Title: Contact
-Date: 2015-10-05 8:00
+Date: 2015-10-07 22:30
 Slug: contact
 Summary: If you want to discuss something or ask a question, use this page to find out how to contact me.
 

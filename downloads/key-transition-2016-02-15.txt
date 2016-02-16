@@ -1,0 +1,74 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+OpenPGP Key Transition Statement for Matthew Vance
+
+I created a new OpenPGP key and am transitioning away from
+my old key. The old key has not been compromised and will continue to
+be valid for some time, but I prefer all future correspondence to be
+encrypted to the new key. I also plan to make signatures with the new
+key going forward.
+
+I would like this new key to be re-integrated into the web of trust.
+This message is signed by both keys to certify the transition. My new
+and old keys are signed by each other. If you have signed my old key,
+I would appreciate signatures on my new key as well, provided that
+your signing policy permits this without re-authenticating me.
+
+The old key is:
+pub   2048R/0xB55BD4DD57A773EA 2010-05-07
+      Key fingerprint = 0C3F C789 DA17 1BAF 40DD  937C B55B D4DD 57A7 73EA
+
+The new key is:
+
+pub   4096R/0x68953CC861A67E7D 2016-02-13
+      Key fingerprint = 12E3 2FE5 0618 0D2E 48E1  D0B2 6895 3CC8 61A6 7E7D
+
+The key is also available from: https://keybase.io/mvance
+
+To fetch the full new key from a public key server using GnuPG, run:
+
+  gpg --keyserver keys.gnupg.net --recv-key 0x68953CC861A67E7D
+
+If you already know my old key, you can verify the new key is
+signed by the old one by running:
+
+  gpg --check-sigs 0x68953CC861A67E7D
+
+If you are satisfied you have the correct key, I would appreciate it if you
+would sign my key:
+
+  gpg --sign-key 0x68953CC861A67E7D
+
+You can upload your signatures to a public keyserver directly:
+
+  gpg --keyserver keys.gnupg.net --send-key 0x68953CC861A67E7D
+
+Or email me (possibly encrypted) the output from:
+
+  gpg --armor --export 0x68953CC861A67E7D
+
+Please contact me directly if you would like any further verification or have
+any questions about the transition.
+
+To verify the integrity of this statement:
+##############
+  wget -q -O- https://matthewvance.github.io/cross-tech/downloads/key-transition-2016-02-15.txt|gpg --verify
+
+- - Matt
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAEBCgAGBQJWwp4+AAoJEGiVPMhhpn59UKwP/2ZBvaTORrmwW9PWbtkJ9Ka9
+HZEeIHFJjEwzNwzqDfjBcf9gJmfLN8uPJbtnNYQ+Cd706bIIZ+O9NIZMl3fwAuNB
+ZigridmWXNttPtwr8Nld1CqtGxr8Heu2i8MlHifkF5jzvLz9l54PINH76M4IYfNz
+4wxxv7hkUXLo9Z4klTzu5g7ThHh3VaUPulw3a7dHHMLsRLGGaWdM+FYnwv+0iN9F
+nI3lo5x/a3ryi96OMHrqvMZZyjg7Wp2KMOIUppbA0afYfhWKrx/V/qKds2NrlG4w
+bDy5Rh4Jf2V/W0YAAzyp8IueYyfOyfUoNzkCzlJlXAd/AsOFWTOW1FCwes5Q2NHM
+D8KzqOPYEX0gkIVy8V/3Ez1xS7jIZ6RkUg6c0c0W9Up7fyERbMEf+mHJZcPomIGA
+aMIBHDxQAjU3G4WMv9E2cC4V6nrEIlHvtfPAGNkxmzG+8TneRLm1WRtTwSfiXgmP
+mbeC4kxCMizzXwEOT2K/CYKnlXV1DeXAlXccHKJtQzZeL00WklWxoaoMY0QwiSk6
+/C7fh8aRCa96LHeDZ/aPvvle5RyH4IKn0pD4gPTppevAoIF5NpbzIjHW/aFGcddd
+Abc3lWwboWgt8XmYs54+QEtkg576i9hHwY2o2zD5TRtcK42Xvp7HDZmFXKEnq2/D
+ves/r7sxLj9KuJ1cKQ6X
+=LF9X
+-----END PGP SIGNATURE-----

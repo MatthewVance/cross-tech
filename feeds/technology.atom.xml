@@ -1,5 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Cross Tech</title><link href="https://matthewvance.github.io/cross-tech/" rel="alternate"></link><link href="https://matthewvance.github.io/cross-tech/feeds/technology.atom.xml" rel="self"></link><id>https://matthewvance.github.io/cross-tech/</id><updated>2016-02-08T22:00:00-06:00</updated><entry><title>Pi Served: Recommended Parts</title><link href="https://matthewvance.github.io/cross-tech/pi-served-recommended-parts.html" rel="alternate"></link><updated>2016-02-08T22:00:00-06:00</updated><author><name>Matthew Vance</name></author><id>tag:matthewvance.github.io,2016-02-08:cross-tech/pi-served-recommended-parts.html</id><summary type="html">&lt;p&gt;If this is your first Raspberry Pi, you need to make sure you have the right parts before you can really start playing with it. My recommendations for a home Linux server are below, but you can of course use alternatives to your liking/budget (the last two are completely optional&amp;nbsp;accessories).&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Cross Tech</title><link href="https://matthewvance.github.io/cross-tech/" rel="alternate"></link><link href="https://matthewvance.github.io/cross-tech/feeds/technology.atom.xml" rel="self"></link><id>https://matthewvance.github.io/cross-tech/</id><updated>2016-02-18T21:10:00-06:00</updated><entry><title>PGP Key Transition Statement</title><link href="https://matthewvance.github.io/cross-tech/pgp-key-transition.html" rel="alternate"></link><updated>2016-02-18T21:10:00-06:00</updated><author><name>Matthew Vance</name></author><id>tag:matthewvance.github.io,2016-02-18:cross-tech/pgp-key-transition.html</id><summary type="html">&lt;p&gt;I am moving to a new OpenPGP key pair so I am publishing the below transition to statement. I have been wanting to move to a new 4096-bit key for some time now, but decided it was time to make the move after recently receiving a &lt;a href="https://keybase.io/"&gt;Keybase&lt;/a&gt; invite from the creator of &lt;a href="https://sendto.click/"&gt;Sendto&lt;/a&gt;. More details about the transition are in the signed statement below. If you have any questions, please let me&amp;nbsp;know.&lt;/p&gt;
+&lt;p&gt;By the way, feel free to use my transition statement as a template for your own. Mine was based off of &lt;a href="https://blog.josefsson.org/2014/06/23/openpgp-key-transition-statement/"&gt;Simon Josefsson’s&lt;/a&gt;, whose version was derived from earlier examples as detailed in his &lt;a href="https://blog.josefsson.org/2014/06/23/offline-gnupg-master-key-and-subkeys-on-yubikey-neo-smartcard/"&gt;Offline GnuPG Master Key and Subkeys on YubiKey &lt;span class="caps"&gt;NEO&lt;/span&gt; Smartcard&lt;/a&gt;&amp;nbsp;article.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+OpenPGP Key Transition Statement for Matthew Vance
+
+I created a new OpenPGP key and am transitioning away from
+my old key. The old key has not been compromised and will continue to
+be valid for some time, but I prefer all future correspondence to be
+encrypted to the new key. I also plan to make signatures with the new
+key going forward.
+
+I would like this new key to be re-integrated into the web of trust.
+This message is signed by both keys to certify the transition. My new
+and old keys are signed by each other. If you have signed my old key,
+I would appreciate signatures on my new key as well, provided that
+your signing policy permits this without re-authenticating me.
+
+The old key is:
+pub   2048R/0xB55BD4DD57A773EA 2010-05-07
+      Key fingerprint = 0C3F C789 DA17 1BAF 40DD  937C B55B D4DD 57A7 73EA
+
+The new key is:
+
+pub   4096R/0x68953CC861A67E7D 2016-02-13
+      Key fingerprint = 12E3 2FE5 0618 0D2E 48E1  D0B2 6895 3CC8 61A6 7E7D
+
+The key is also available from: https://keybase.io/mvance
+
+To fetch the full new key from a public key server using GnuPG, run:
+
+  gpg --keyserver keys.gnupg.net --recv-key 0x68953CC861A67E7D
+
+If you already know my old key, you can verify the new key is
+signed by the old one by running:
+
+  gpg --check-sigs 0x68953CC861A67E7D
+
+If you are satisfied you have the correct key, I would appreciate it if you
+would sign my key:
+
+  gpg --sign-key 0x68953CC861A67E7D
+
+You can upload your signatures to a public keyserver directly:
+
+  gpg --keyserver keys.gnupg.net --send-key 0x68953CC861A67E7D
+
+Or email me (possibly encrypted) the output from:
+
+  gpg --armor --export 0x68953CC861A67E7D
+
+Please contact me directly if you would like any further verification or have
+any questions about the transition.
+
+To verify the integrity of this statement:
+
+  wget -q -O- https://matthewvance.github.io/cross-tech/downloads/key-transition-2016-02-18.txt|gpg --verify
+
+Matt
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAEBCgAGBQJWxoh7AAoJEGiVPMhhpn59b8kP/iRDoFln2FsfcYjC94aE+chC
+7dNsXyU55xG5LEw8bu/GjS0jidOhSSXauEHHr7JSFqsYL1kUSou1s5oOqkEFHPrv
+4PVIqWFyA3MCQjon1qzdAQEhDM2la1UWfTgAfdEhsJbIQC0h0Q1nLG87PqN4vZKW
+cyu4/bKx/zrIwRMNPo7sTCPXowgxEKjgtYqvJ2MJIu9tMstbQL7nG9gEamPI6EMp
+MM1ZD9yB8CneRy4vP5WiWgAHcrZX817MNZjhmju4NhiPD4W06F5mlGCv30kFi45/
+2Jc5GpRVXU63UVwnV/649h3cuwEZRepJGJDJlyPQRrDwCyxxkYV8v/aZaJac6a5D
+8fT0bp4iV6mxGfNwg2q5BLRv/zmckmTTe7Pwt1UiPymHiFfq+wEwEkrvqOvwZqCL
+/NSXh+Q/tZXyL2lgqHm2nc3saNoiRkRo/jpvmAitUY/cYlEpFQAfF4qvhyDGPkya
+7N1DOIA+2sR5TtTXuqCjxoQ8sW5G9z2vQ9gr6Kl54I04Yu98oyG4WOaQXwA2c2i6
+jG7kyjwk1nvtDYpb3O48gdChohckDlAAc6RtCzhjnT3cVBUHLxbS2DYbFrKxw5PF
+FDfxlKXy5scuL0widH+QO6Fz1DflQ/YFHpIRHZ+jt/0aDZNMMlPuvTxzpSX3h/P0
+1huVy/SGHSzFy6ZbnNVUiQEcBAEBCgAGBQJWxoh7AAoJELVb1N1Xp3Pqb8kIALEK
+D+9w4vgtfRtJ8FuM+uv9ozlzHqD1dO5g4V1rWzVPnD3685TZD2AcPZoFxz4jFxYd
+gNV9A6GLG5ECrsggpYoLQHlGIIE5e18QoP9FbrpP9PMA43BU44Fb+OhzjZSoqOFT
+fW85DMgcmz7ucb7uc14W/NCdmB6DuEYGC1HwPpgT7cjLGYwMbFrmY3o1/WNsZ/3a
+bnU+c4UIrHLMcWLXd+2slwt6IG6GQpM67e2D5hO/DJ1z0w9aQbTUJ07C0InBFIwh
+GiraQJNQhvi73C3aWj0OGhIWuM9BJZlUJOKCkpGSJlBr26ExlP5MZqiULouC3lJU
+Pbkn1OTb2dlgfcTsH7Y=
+=G+Y1
+-----END PGP SIGNATURE-----
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="gnupg"></category><category term="security"></category></entry><entry><title>Pi Served: Recommended Parts</title><link href="https://matthewvance.github.io/cross-tech/pi-served-recommended-parts.html" rel="alternate"></link><updated>2016-02-08T22:00:00-06:00</updated><author><name>Matthew Vance</name></author><id>tag:matthewvance.github.io,2016-02-08:cross-tech/pi-served-recommended-parts.html</id><summary type="html">&lt;p&gt;If this is your first Raspberry Pi, you need to make sure you have the right parts before you can really start playing with it. My recommendations for a home Linux server are below, but you can of course use alternatives to your liking/budget (the last two are completely optional&amp;nbsp;accessories).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://smile.amazon.com/gp/product/B00A83I8G2?psc=1&amp;amp;redirect=true&amp;amp;ref_=oh_aui_detailpage_o01_s00"&gt;Apple 12W &lt;span class="caps"&gt;USB&lt;/span&gt; Power Adapter&lt;/a&gt; - I like the Apple version because it&amp;#8217;s rated for 5.2 volts and 2.4 amps which is more than sufficient to support overclocking and any Pi accessories I may decide to add in the future. Also, when it comes to electrical stuff I&amp;#8217;d rather by a brand which should have some good quality control and safety measures in&amp;nbsp;place.&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://smile.amazon.com/gp/product/B01273L37G?psc=1&amp;amp;redirect=true&amp;amp;ref_=oh_aui_detailpage_o02_s00"&gt;Samsung Pro Plus &lt;span class="caps"&gt;32GB&lt;/span&gt; MicroSDHC Memory Card with &lt;span class="caps"&gt;95MB&lt;/span&gt;/s Read, &lt;span class="caps"&gt;90MB&lt;/span&gt;/s Write&lt;/a&gt; - This card likely supports read/write speeds faster than the Pi is capable of reading/writing, but I got a great deal on at the time and don&amp;#8217;t have to worry about the card being a bottleneck. However, at the current price at the time of this post, I suggest you also look at the &lt;a href="http://smile.amazon.com/gp/product/B013CP5F90?psc=1&amp;amp;redirect=true&amp;amp;ref_=oh_aui_detailpage_o01_s00"&gt;SanDisk Extreme &lt;span class="caps"&gt;16GB&lt;/span&gt; microSDHC &lt;span class="caps"&gt;UHS&lt;/span&gt;-1&lt;/a&gt;.&lt;/li&gt;
